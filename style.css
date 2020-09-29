@@ -33,7 +33,7 @@ body {
     font-weight: 600;
 }
 
-.header p{
+.header h6{
     margin: 0;
     color: hsl(229, 6%, 66%);
     line-height: 1.7;
@@ -48,6 +48,7 @@ body {
 }
 
 .wrap .card {
+    display: flex;
     max-width: 350px;
     height: 220px;
     margin-top: 30px;
@@ -90,12 +91,13 @@ body {
     line-height: 22px;
 }
 
-.card-image {
+.card img {
     margin-top: 40px;
-    float: right;
     width: 50px;
-    margin-left: 250px;
+    height: 50px;
+    margin-left: 220px;
 }
+
 
 @media (max-width: 1100px){
     .header {
@@ -103,8 +105,26 @@ body {
         padding-left: 20px;
     }
 
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .header h2 {
+        font-size: 22px;
+    }
+
+    .header h6 {
+        font-size: 15px;
+    }
+
     .wrap {
-        flex-direction: column;
-        
+        flex-direction: column;    
+    }
+
+    .card img {
+        margin-top: 30px;
+        width: 50px;
+        height: 50px;
+        margin-left: 180px;
     }
 }
